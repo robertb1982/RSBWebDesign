@@ -1,0 +1,179 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #ffffff;
+	background: #333;
+    overflow: auto;
+}
+
+.landing {
+	position: relative;
+	background-image: url('../img/coming-soon.jpg') !important;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+
+.landing-inner {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0, 0.4);
+	text-align: center;
+	padding-top: 8%;
+}
+
+.landing span.title {
+	font-size: 60px;
+	font-weight: 700;
+	text-shadow: 3px 3px #000000;
+}
+
+.landing h1 {
+	font-size: 40px;
+}
+
+.landing img {
+	width: 45%;
+}
+
+.landing p {
+	font-size: 16px;
+	padding: 10px 25px 15px;
+	margin: 10px auto;
+	width: 50%;
+}
+
+.landing a {
+	color: #ffffff;
+}
+
+.comingsoon {
+	margin-top: 0px;
+	color: #E5E5E5;
+	text-shadow: 3px 3px #000000;
+}
+
+.countdown {
+	font-size: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.countdown div {
+	padding: 15px;
+	border: 1px solid #ffffff;
+	border-radius: 10px;
+	margin: 10px;
+	opacity: 0.7;
+	background: #000000;
+}
+
+/* .countdown div:first-child {
+	background: #686868;
+} */
+
+.countdown span {
+	display: block;
+	font-size: 25px;
+}
+
+.fab, .fas {
+	padding: 0 15px;
+	font-size: 50px;
+}
+
+@media screen and (max-width: 650px) {
+.landing {
+	height: 140vh;
+	overflow: auto;}
+.landing-inner {
+	height: auto;}
+.landing span.title {
+	font-size: 40px;
+	width: 60%;}
+.landing img {
+	width: 80%;}
+.landing h1 {
+	font-size: 30px;}
+.landing p {
+	width: 80%;
+	font-size: 16px;}
+.countdown {
+    font-size: 25px;
+    flex-direction: column;}
+.countdown span {
+	font-size: 15px;}
+.countdown div {
+    display: block;
+    width: 50%;
+    padding: 10px;}
+}
+
+@media screen and (max-width: 425px) {
+.landing {
+	height: 100vh;
+	overflow: auto;}
+.landing-inner {
+	height: inherit;
+    padding-top: 8%;}
+.countdown {
+    font-size: 18px;}
+.fab, .fas {
+	font-size: 30px;}
+}
+
+@media screen and (max-width: 375px) {
+.landing {
+    background-image: url('../img/coming-soon-mobile.jpg') !important;
+    background-size: cover;
+    height: 120vh;}
+.fab, .fas {
+	font-size: 25px;}
+}
+
+/**
+ * ----------------------------------------
+ * animation bounce
+ * ----------------------------------------
+ */
+
+.bounce-top:hover {
+  cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+}
+
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-30px);
+		-ms-transform:     translateY(-30px);
+		transform:         translateY(-30px)
+	}
+	60% {
+		-webkit-transform: translateY(-15px);
+		-ms-transform:     translateY(-15px);
+		transform:         translateY(-15px)
+	}
+}
