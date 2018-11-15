@@ -1,2 +1,2 @@
 # RSBWebDesign
-Files and Assets from my portfolio website. Full website is on it's way, but have build a coming soon page using HTML, CSS, JavaScript.
+Files and Assets from my portfolio respsonsive website. This website is under construction, and is in the process of being built from scratch, but I have uploaded what I've built so far using HTML, CSS, JavaScript and jQuery.
