@@ -1,0 +1,272 @@
+/* Pie Chart Wrapper */
+section.wrapper {
+	padding: 3em 5%;
+	background: #ffffff;
+  display: block;
+}
+
+.wrapper.row {
+  clear: both;
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+h2 {
+  margin-bottom: 0.5em;
+  font-size: 2rem;
+  line-height: 1.2em;
+  color: #000000;
+}
+
+.col-12 {
+  width: 100%
+}
+
+.pie-chart {
+  text-align: center;
+}
+
+.pie-chart .designer {
+  float: left;
+  margin-bottom: 0;
+  text-align: left;
+  padding-top: 3em;
+}
+
+.pie-chart ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.pie-chart ul li {
+  display: block;
+  margin-bottom: 0.7em;
+  color: #111111;
+}
+
+.pie-chart .developer {
+  float: right;
+  margin-bottom: 0;
+  text-align: left;
+  padding-top: 3em;
+}
+
+/* Skills Wrapper Bar Fills */
+.skills-wrapper {
+  margin: 50px 0 0 0;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.skills-wrapper > .flex:first-child {
+  padding: 0 50px;
+}
+
+.skills-wrapper > .flex:last-child {
+  padding: 0 50px;
+}
+
+.skills {
+  text-align: center;
+}
+
+.flex.row-gt-sm {
+  flex-direction: row;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 3px;
+}
+
+section .flex-50-gt-sm {
+  display: block;
+}
+
+.flex-50-gt-sm {
+  -webkit-flex: 1 1 50%;
+  -ms-flex: 1 1 50%;
+  flex: 1 1 50%;
+  max-width: 50%;
+  max-height: 100%;
+  box-sizing: border-box;
+}
+
+.bar {
+  max-width: 90%;
+  height: 28px;
+  margin: 0 0 15px 0;
+  font-size: 11pt;
+  position: relative;
+  background-color: #e5e5e5;
+  align-items: flex-end;
+  color: #666;
+  border-radius: 3px;
+}
+
+.bar .fill {
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: #737373;
+  padding: 0;
+  opacity: 1;
+}
+
+.bars-wrap {
+  margin: 0 0 0 0;
+  width: calc(100% - 15px);
+  max-width: 90%;
+}
+
+.bar .tag {
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: #f04;
+  color: #fff;
+  height: 100%;
+  width: 110px;
+  }
+
+.bar span {
+  display: initial;
+  z-index: 1;
+  padding: 0 15px 0 0;
+}
+
+.waypoint {
+    opacity: 0;
+}
+
+/* Designer */
+.flex .flex:first-child .bar:nth-child(1) .fill {
+      animation: animate 1 4s;
+      max-width: 85%;
+}
+.flex .flex:first-child .bar:nth-child(2) .fill {
+      animation: animate 1 4s;
+      max-width: 75%;
+}
+.flex .flex:first-child .bar:nth-child(3) .fill {
+      animation: animate 1 4s;
+      max-width: 55%;
+}
+.flex .flex:first-child .bar:nth-child(4) .fill {
+      animation: animate 1 4s;
+      max-width: 55%;
+}
+.flex .flex:first-child .bar:nth-child(5) .fill {
+      animation: animate 1 4s;
+      max-width: 75%;
+}
+.flex .flex:first-child .bar:nth-child(6) .fill {
+      animation: animate 1 4s;
+      max-width: 80%;
+}
+.flex .flex:first-child .bar:nth-child(7) .fill {
+      animation: animate 1 4s;
+      max-width: 60%;
+}
+.flex .flex:first-child .bar:nth-child(8) .fill {
+      animation: animate 1 4s;
+      max-width: 70%;
+}
+.flex .flex:first-child .bar:nth-child(9) .fill {
+      animation: animate 1 4s;
+      max-width: 70%;
+}
+.flex .flex:first-child .bar:nth-child(10) .fill {
+      animation: animate 1 4s;
+      max-width: 50%;
+}
+
+/* Developer */
+.flex .flex:last-child .bar:nth-child(1) .fill {
+      animation: animate 1 4s;
+      max-width: 80%;
+}
+.flex .flex:last-child .bar:nth-child(2) .fill {
+      animation: animate 1 4s;
+      max-width: 85%;
+}
+.flex .flex:last-child .bar:nth-child(3) .fill {
+      animation: animate 1 4s;
+      max-width: 55%;
+}
+.flex .flex:last-child .bar:nth-child(4) .fill {
+      animation: animate 1 4s;
+      max-width: 80%;
+}
+.flex .flex:last-child .bar:nth-child(5) .fill {
+      animation: animate 1 4s;
+      max-width: 70%;
+}
+.flex .flex:last-child .bar:nth-child(6) .fill {
+      animation: animate 1 4s;
+      max-width: 85%;
+}
+.flex .flex:last-child .bar:nth-child(7) .fill {
+      animation: animate 1 4s;
+      max-width: 85%;
+}
+.flex .flex:last-child .bar:nth-child(8) .fill {
+      animation: animate 1 4s;
+      max-width: 88%;
+}
+.flex .flex:last-child .bar:nth-child(9) .fill {
+      animation: animate 1 4s;
+      max-width: 60%;
+}
+.flex .flex:last-child .bar:nth-child(10) .fill {
+      animation: animate 1 4s;
+      max-width: 45%;
+}
+
+@keyframes animate {
+0% {
+    width: 0;
+}
+
+100% {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+.landing {
+    height: 400px;
+}
+.flex.row-gt-sm {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 425px) {
+.landing {
+   height: 300px;
+}
+.pie-chart .designer {
+    float: none;
+    text-align: center;
+}
+.pie-chart .developer {
+    float: none;
+    text-align: center;
+}
+#img-0 {
+    max-width: 100%;
+}
+section.wrapper {
+    padding-top: 1em;
+}
+.skills-wrapper > .flex:first-child {
+    padding: 0;
+}
+.skills-wrapper > .flex:last-child {
+    padding: 0;
+  }
+}

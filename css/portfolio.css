@@ -1,0 +1,177 @@
+section.container {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.row {
+    clear: both;
+    max-width: 1040px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#filters {
+	margin:3%;
+	padding:0;
+	list-style:none;
+	display: inline-block;
+}
+
+#filters li {
+	float:left;
+}
+	
+#filters li span {
+	display: block;
+	padding:5px 20px;		
+	text-decoration:none;
+	color:#666;
+	cursor: pointer;
+}
+	
+#filters li span.active {
+	background: #f04;
+	color:#fff;
+}
+
+.row:after, .clearfix:after {
+    clear: both;
+}
+
+.clearfix:after, .row:after {
+    content: '\0020';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+#portfoliolist {
+	display: block;
+}
+
+#portfoliolist .portfolio {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	width:30%;
+	margin:1%;
+	display:none;
+	float:left;
+	overflow:hidden;
+}
+
+.portfolio-wrapper {
+	overflow:hidden;
+	position: relative !important;
+	background: #f04;
+	cursor:pointer;
+}
+
+.portfolio img {
+	max-width:100%;
+	position: relative;
+	top:0;
+    -webkit-transition: all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition:         all 600ms cubic-bezier(0.645, 0.045, 0.355, 1);		
+}
+	
+.portfolio .label {
+	position: absolute;
+	width: 100%;
+	height: 40px;
+	bottom: -40px;
+    -webkit-transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition:         all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.portfolio .label-bg {
+	background: #f04;
+	width: 100%;
+	height: 190%;
+	position: absolute;
+	top:0;
+	left:0;
+}
+	
+.portfolio .label-text {
+	color:#fff;
+	position: relative;
+	z-index:500;
+	padding:5px 8px;
+}
+
+.text-title {
+	font-weight: 600;
+}
+			
+.portfolio .text-category {
+	transition: all .3s ease-out;
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff !important;
+    display: inline-block;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 1em;
+    margin-top: 10px;
+    padding: 1em 1.75em;
+    text-decoration: none !important;
+    text-transform: uppercase;
+}
+
+.portfolio .text-category:hover {
+	background-color: #fff;
+    border: 2px solid #fff;
+    color: #f04 !important;
+}
+	
+.portfolio:hover .label {
+    bottom: 40px;
+  }
+
+.portfolio:hover img {
+    top:-30px;
+  }  
+
+  /* #Tablet (Portrait) */
+@media screen and (min-width: 768px) and (max-width: 959px) {
+	section.container {
+		width: 768px; 
+	}
+}
+
+/*  #Mobile (Portrait) - Note: Design for a width of 320px */
+@media screen and (max-width: 767px) {
+	section.container { 
+		width: 95%; 
+	}
+	
+	#portfoliolist .portfolio {
+		width:80%;
+		margin:8%;
+	}		
+}
+
+/* #Mobile (Landscape) - Note: Design for a width of 480px */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+	section.container {
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	#filters {
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	#filters {
+		margin: 3% 1%;
+	}
+}

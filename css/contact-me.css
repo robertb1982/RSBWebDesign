@@ -1,0 +1,172 @@
+/* Contact Me */
+section.container {
+	padding: 3em 5%;
+}
+
+.row {
+	padding-top: 40px;
+}
+
+/* Iframe Google Maps */
+.scrolloff {
+	pointer-events: none;
+}
+
+iframe {
+	border: 0;
+}
+
+/* Profile Pic */
+.col-4, .col-8 {
+    display: inline-block;
+}
+
+.col-4 {
+    width: 32%;
+    float: left;
+    position: relative;
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+    margin-bottom: -70px;
+}
+
+.center {
+    text-align: center;
+}
+
+.details {
+    width: 126px;
+    margin: 9px auto 0;
+    background: #f04;
+    padding: 9px 0;
+    border-radius: 5px;
+}
+
+.details a {
+	color: #fff;
+	text-decoration: none;
+	display: block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
+
+/* Form */
+.col-8 {
+    width: 65%;
+}
+
+#contact {
+    padding-bottom: 40px;
+}
+
+#contact-form {
+    margin-bottom: 40px;
+}
+
+.buffer-bottom {
+    margin-bottom: 10px;
+}
+
+input[type=email], input[type=text], textarea {
+    padding: 12px 24px;
+    font-size: 15px;
+    font-family: Arial;
+    color: #000;
+    margin: 0 20px 10px 0;
+    border: none;
+    background: rgba(0,0,0,.06);
+    font-weight: 400;
+    border-radius: 5px;
+}
+
+input[type=email], input[type=text] {
+    width: 30%;
+}
+
+input[type=text]:last-of-type {
+    margin-right: 0;
+}
+
+textarea {
+    color: #000;
+    width: 98.2%;
+    resize: none;
+    overflow: hidden;
+}
+
+#submit-response {
+    color: #fff;
+    display: none;
+    padding: 7px 20px;
+    border-radius: 8px;
+}
+
+.pull-right {
+    float: right;
+}
+
+#contact-form .button {
+    color: #f04;
+    margin-right: 11px;
+    border: 1px solid #f65151;
+}
+
+.button {
+    background: 0 0;
+    text-align: center;
+    color: #fff;
+    padding: 9px 31px;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: open sans,sans-serif;
+    letter-spacing: 0;
+    border-radius: 5px;
+    -webkit-transition: padding .25s,background .25s;
+    transition: padding .25s,background .25s;
+}
+
+#contact-form .button:hover {
+    background: #f04;
+    color: #fff!important;
+}
+
+.alert-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+
+.alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+.alert {
+    padding: 15px;
+    margin: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1072px) {
+input[type=email], input[type=text] {
+    display: block;
+    width: 100%;
+    margin: 13px 0;
+	}
+}
+
+@media screen and (max-width: 690px) {
+.col-4 {
+    width: 100%;
+}
+.col-8 {
+    width: 100%;
+	}
+}

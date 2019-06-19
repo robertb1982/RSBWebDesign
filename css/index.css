@@ -1,0 +1,60 @@
+/* Hero Background */
+@media screen and (max-width: 1024px) {
+.landing {
+	height: 600px;
+}
+.mast.mast-dark {
+	height: 500px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+section.about {
+   height: 750px;
+}
+#text-main {
+    width: 100%;
+}
+#img-main {
+	width: 100%;
+	justify-content: center;
+    display: flex;
+}
+#img-main img {
+    width: 55%;
+}
+footer .container {
+    width: 100%;
+}
+.mast.mast-dark {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+.landing {
+   height: 400px;
+ }
+ section.about {
+    height: 950px;
+}
+#text-main {
+    height: 550px;
+}
+#text-main h2 {
+  margin-top: 0px;
+}
+#img-main img {
+    width: 90%;
+  }
+h3.h2 {
+    font-size: 20px;
+}
+h3.h2:before {
+    width: 15%;
+}
+h3.h2:after {
+    width: 15%;
+
+  }
+}
