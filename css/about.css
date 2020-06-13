@@ -1,0 +1,626 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	font-family: futura-pt, sans-serif;
+	color: #ffffff;
+	background: #ffffff;
+  overflow: auto;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  z-index: 3;
+}
+
+header nav {
+	float: right;
+}
+
+nav {
+  position: relative;
+  display: block;
+}
+
+.container {
+  margin: 0 auto;
+  width: 75%;
+  max-width: 1600px;
+}
+
+/* Main Menu */
+#main-nav a {
+  font-family: futura-pt, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  font-size: 0.875em;
+  text-decoration: none;
+  padding: 1em 1.2em;
+  margin-top: 1em;
+  display: block;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 3px solid transparent; 
+}
+
+#main-nav ul {
+  display: block;
+  list-style: none;
+}
+
+#main-nav li {
+  float: left;
+  display: block;
+}
+
+#main-nav a:hover {
+  border-bottom: 3px solid #f04;
+}
+
+#logo {
+  display: block;
+  text-indent: -9999em;
+  width: 30%;
+  height: 100px;
+  background: url(../img/rsb-webdesign-logo.png) no-repeat;
+  background-size: 300px 70px;
+  margin-top: 0.9375em;
+  float: left;
+  position: absolute;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#logo:hover {
+  -webkit-transform: scale(1.1) rotate(0deg) translate(0, 0) skew(0deg, 0deg);
+  -moz-transform: scale(1.1) rotate(0deg) translate(0, 0) skew(0deg, 0deg);
+  -o-transform: scale(1.1) rotate(0deg) translate(0, 0) skew(0deg, 0deg);
+  transform: scale(1.1) rotate(0deg) translate(0, 0) skew(0deg, 0deg);
+}
+
+/* Side Menu */ 
+.open-slide {
+	display: none;
+}
+
+.side-nav {
+	display: none;
+}
+
+/* Section */
+.landing {
+	position: relative;
+	background-image: url('../img/rsb-web-design-hero-v2.jpg') !important;
+	background-size: cover;
+	background-position: bottom;
+  background-attachment: fixed;
+	height: 85vh;
+}
+
+.landing-inner {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0, 0.7);
+	text-align: center;
+	padding-top: 8%;
+}
+
+.landing h1 {
+	font-size: 55px;
+  font-family: futura-pt, sans-serif;
+  font-weight: 500;
+	padding-top: 6%;
+	text-shadow: 1px 1px #000000;
+}
+
+.landing img {
+	width: 45%;
+}
+
+.landing p {
+	font-size: 25px;
+  font-family: futura-pt, sans-serif;
+	padding: 0px 25px 35px;
+	margin: 10px auto;
+	width: 65%;
+}
+
+.landing a {
+	color: #ffffff;
+}
+
+.fab, .fas {
+	padding: 0 15px;
+	font-size: 50px;
+}
+
+/* About Me */
+section.about {
+  background-color: #ffffff;
+  border: none;
+  padding: 4% 3%;
+  height: 100%;
+  display: flex;
+}
+
+.row {
+  clear: both;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.col-7 {
+	width: 55%;
+	height: 100%;
+	background-color: #ffffff;
+	float: left;
+  margin: 0 3% 0 0;
+  list-style: none;
+  position: relative;
+}
+
+.text-main {
+	color: #000000;
+	text-align: left;
+	font-size: 24px;
+}
+
+.text-main h2 {
+	font-size: 26px;
+  font-family: futura-pt, sans-serif;
+  margin-top: 0;
+}
+
+.text-main p {
+	font-size: 16px;
+	line-height: 1.7em;
+  font-family: futura-pt, sans-serif;
+}
+
+.col-5 {
+	width: 40%;
+	height: 100%;
+	background-color: #ffffff;
+	float: left;
+  list-style: none;
+  position: relative;
+}
+
+.col-6 {
+  width: 50%;
+  height: 100%;
+  background-color: #ffffff;
+  float: left;
+  list-style: none;
+  position: relative;
+}
+
+.text-main-2 {
+  color: #000000;
+  text-align: left;
+  font-size: 24px;
+}
+
+.text-main-2 h2 {
+  font-size: 26px;
+  font-family: futura-pt, sans-serif;
+  margin-top: 0;
+}
+
+.text-main-2 p {
+  font-size: 16px;
+  line-height: 1.7em;
+  font-family: futura-pt, sans-serif;
+}
+
+.img-responsive {
+  width: 80%;
+  margin: auto;
+  display: block;
+}
+
+.img-responsive-2 {
+  width: 100%;
+  margin: auto;
+  display: block;
+}
+
+hr {
+  width: 60%;
+  color: #f04;
+  margin: 50px auto;
+}
+
+.button.primary {
+  color: #f04;
+  border-color: #f04;
+  float: left;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  width: 30%;
+  margin: 1em 0 3.75em 0;
+  padding: .875em 0;
+  font-size: 1em;
+  border: 2px solid #f04;
+  border-radius: 4px;
+  display: block;
+  transition: all 0.5s ease-in-out;
+}
+
+.button.primary:hover {
+  background: #f04;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+	display: block;
+}
+
+footer .container {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 70px 0;
+  width: 960px;
+}
+
+footer a {
+	color: #ffffff;
+}
+
+.mast.mast-dark, .mast.mast-dark-trans {
+  background: #0d0d0d;
+  color: #FFF;
+  height: 100% !important;
+}
+
+.mast {
+  text-align: center;
+}
+
+h3.h3 {
+  position: relative;
+  font-size: 24px;
+  font-family: futura-pt, sans-serif;
+}
+
+h3.h3:before {
+  position: absolute;
+  top: 50%;
+  display: block;
+  width: 30%;
+  border-bottom: 5px solid rgba(255, 0, 68, 0.7);
+  content: "";
+}
+
+h3.h3:after {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  display: block;
+  width: 30%;
+  border-bottom: 5px solid rgba(255, 0, 68, 0.7);
+  content: "";
+}
+
+p.text-xxl {
+  margin-top: 25px;
+  font-family: futura-pt, sans-serif;
+}
+
+@media screen and (max-width: 1400px) {
+.container {
+  width: 85%;
+ }
+
+.landing h1 {
+  font-size: 40px;
+  padding-top: 3%;
+ }
+
+.landing {
+  height: 550px;
+}
+
+.mast.mast-dark {
+  height: 400px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+#logo {
+ 	width: 30%;
+ 	background-size: 200px 70px;
+ 	margin-left: 2em;
+}
+
+.landing p {
+  font-size: 22px;
+  width: 80%;
+ }
+}
+
+@media screen and (max-width: 768px) {
+.open-slide {
+	display: block;
+	float: right;
+	padding-top: 1.6em;
+	margin-right: 2em;
+}
+
+.side-nav {
+	display: block;
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	right: 0;
+	background-color: #111;
+	opacity: 1;
+	overflow-x: hidden;
+	padding-top: 60px;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+ .side-nav a {
+ 	padding: 10px 10px 10px 30px;
+ 	text-transform: uppercase;
+ 	text-decoration: none;
+ 	font-size: 18px;
+ 	color: #ccc;
+ 	display: block;
+ 	-webkit-transition: 0.3s;
+ 	-moz-transition: 0.3s;
+ 	-o-transition: 0.3s;
+ 	transition: 0.3s;
+}
+
+.side-nav a:hover {
+ 	color: #f04;
+}
+
+.side-nav .btn-close {
+ 	position: absolute;
+ 	top: 0;
+ 	right: 22px;
+ 	font-size: 36px;
+ 	margin-left: 50px;
+}
+
+#main {
+	transition: margin-right 0.5s;
+ 	overflow: hidden;
+ 	padding: 20px;
+}
+
+#main-nav {
+ 	display: none;
+}
+
+#logo {
+ 	display: block;
+ 	width: 30%;
+ 	background-size: 230px 70px;
+ 	margin-left: 0;
+}
+
+.landing {
+  height: 400px;
+}
+
+.landing h1 {
+	font-size: 30px;
+}
+
+.landing p {
+	font-size: 20px;
+	width: 80%;
+}
+
+.fab, .fas {
+	font-size: 35px;
+}
+
+footer .container {
+  width: 100%;
+}
+
+.mast.mast-dark {
+  height: 400px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+#logo {
+ 	width: 70%;
+ 	background-size: 250px 70px;
+}
+
+.landing {
+	height: 60vh;
+	overflow: auto;
+}
+
+.landing-inner {
+	height: 100%;
+}
+
+.landing span.title {
+	font-size: 40px;
+	width: 60%;
+}
+
+.landing img {
+	width: 80%;
+}
+
+.landing h1 {
+	font-size: 25px;
+}
+
+.landing p {
+	width: 85%;
+	font-size: 16px;
+ }
+
+ section.about {
+  display: flow-root;
+  height: 100%;
+}
+
+ .col-7, .col-6, .col-5 {
+  width: 100%;
+ }
+
+ footer .container {
+  width: 100%;
+ }
+}
+
+@media screen and (max-width: 425px) {
+#logo {
+ 	width: 70%;
+ 	background-size: 225px 50px;
+}
+
+#main {
+	width: 100%;
+}
+
+.landing {
+	height: 50vh;
+	overflow: auto;
+}
+
+.landing-inner {
+	height: inherit;
+  padding-top: 15%;
+}
+
+.landing h1 {
+	font-size: 20px;
+	margin-top: 40px;
+}
+
+.button {
+  width: 90%;
+}
+
+.button.primary {
+  width: 60%;
+}
+
+.fab, .fas {
+	font-size: 30px;
+ }
+
+ footer .container {
+  padding: 50px 0;
+ }
+
+ h3.h3:before {
+  width: 15%;
+}
+
+h3.h3:after {
+  width: 15%;
+ }
+}
+
+@media screen and (max-width: 375px) {
+#logo {
+  width: 70%;
+  background-size: 200px 50px;
+}
+
+.landing {
+  background-image: url('../img/rsb-web-design-hero-v2-mobile.jpg') !important;
+  background-size: cover;
+  height: 60vh;
+}
+
+.landing p {
+  padding-bottom: 10px;
+}
+
+.img-responsive-2 {
+  padding-bottom: 50px;
+}
+
+h3.h3:before {
+  width: 10%;
+}
+
+h3.h3:after {
+  width: 10%;
+}
+
+.button.primary {
+  width: 60%;
+}
+
+.fab, .fas {
+	font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+.landing {
+  height: 70vh;
+ }
+}
+
+/**
+ * ----------------------------------------
+ * animation bounce
+ * ----------------------------------------
+ */
+
+.bounce-top:hover {
+  cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+}
+
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-30px);
+		-ms-transform:     translateY(-30px);
+		transform:         translateY(-30px)
+	}
+	60% {
+		-webkit-transform: translateY(-15px);
+		-ms-transform:     translateY(-15px);
+		transform:         translateY(-15px)
+	}
+}
