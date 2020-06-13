@@ -1,19 +1,19 @@
 /* Contact Me */
 section.container {
-	padding: 3em 5%;
+    padding: 3em 5%;
 }
 
 .row {
-	padding-top: 40px;
+    padding-top: 40px;
 }
 
 /* Iframe Google Maps */
 .scrolloff {
-	pointer-events: none;
+    pointer-events: none;
 }
 
 iframe {
-	border: 0;
+    border: 0;
 }
 
 /* Profile Pic */
@@ -37,19 +37,16 @@ iframe {
 .details {
     width: 126px;
     margin: 9px auto 0;
-    background: #f04;
     padding: 9px 0;
+    background: #f04;
     border-radius: 5px;
-}
-
-.details a {
-	color: #fff;
-	text-decoration: none;
-	display: block;
+    color: #fff;
+    text-decoration: none;
+    display: block;
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 0;
-    text-transform: uppercase;
+    text-transform: uppercase
 }
 
 /* Form */
@@ -67,6 +64,11 @@ iframe {
 
 .buffer-bottom {
     margin-bottom: 10px;
+    display: flex;
+}
+
+.buffer-bottom:nth-child(2) .flex {
+    width: 100%;
 }
 
 input[type=email], input[type=text], textarea {
@@ -82,7 +84,7 @@ input[type=email], input[type=text], textarea {
 }
 
 input[type=email], input[type=text] {
-    width: 30%;
+    width: 90%;
 }
 
 input[type=text]:last-of-type {
@@ -122,7 +124,6 @@ textarea {
     border: 1px solid #fff;
     font-size: 12px;
     font-weight: 700;
-    font-family: open sans,sans-serif;
     letter-spacing: 0;
     border-radius: 5px;
     -webkit-transition: padding .25s,background .25s;
@@ -131,7 +132,11 @@ textarea {
 
 #contact-form .button:hover {
     background: #f04;
-    color: #fff!important;
+    color: #fff !important;
+}
+
+.alert-message {
+    margin-top: 10%;
 }
 
 .alert-success {
@@ -155,18 +160,41 @@ textarea {
 }
 
 @media screen and (max-width: 1072px) {
+.buffer-bottom {
+    display: block;
+}
 input[type=email], input[type=text] {
     display: block;
     width: 100%;
     margin: 13px 0;
-	}
+    }
+}
+
+@media screen and (max-width: 768px) {
+.landing {
+  height: 40vh;
+}
+
+.landing h1 {
+  margin-top: 80px;
+}
+
+.alert-message {
+  margin-top: 15%;
+ }
 }
 
 @media screen and (max-width: 690px) {
 .col-4 {
-    width: 100%;
+  width: 100%;
 }
 .col-8 {
-    width: 100%;
-	}
+  width: 100%;
+ }
+}
+
+@media screen and (max-width: 425px) {
+.landing {
+  height: 50vh;
+ }
 }
