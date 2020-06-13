@@ -100,7 +100,6 @@ if($error == ''){
 				</ul>
 			</nav>
 	</div>
-
 	<span class="open-slide">
 		<a href="#" onclick="openSlideMenu()"><img src="img/hamburger-icon.png"></a>
 	</span>
