@@ -21,13 +21,11 @@ if(isset($_POST['submit'])){
 	$email = $_POST['email'];
 	$phone = $_POST['phone'];
 	$message = $_POST['message'];
-	$check = intval($_POST['secCheck']);
 	
 	if(!$_POST['name']){$error .='Please enter your name! <br>';}
 	if(!$_POST['phone']){$error .='Please enter your phone number! <br>';}
 	if(!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){ $error .= 'Please enter your email! <br>'; }
 	if(!$_POST['message']){$error .='Please enter a message! <br>';}
-	if($check !==($_SESSION["a"]+$_SESSION["b"])){$error .='Wrong AntiSpam value <br>';}
 
 if($error == ''){
     $from = 'webmaster@rsbwebdesign.com';
@@ -58,17 +56,16 @@ if($error == ''){
 <html lang="en">
 <head>
 	<title>Contact | RSB Web Design</title>
-	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="shortcut icon" href="img/rsb-favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/rsb-favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="stylesheet" type="text/css" href="css/contact-me.css">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.typekit.net/fuf5rko.css">
     <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
-	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 	<script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
@@ -81,25 +78,25 @@ if($error == ''){
   		gtag('config', 'UA-129524654-1');
 	</script>
 	<style>
-<style>
     .invalid-feedback {
-        padding: 0 22% 2%;
-        color: #000000;
+        color: #f04;
+        font-size: 12px;
+        margin-top: 0px;
     }
-</style>
+    </style>
 </head>
 
 <body>
 <header>
 	<div class="container">
-		<a href="index.html" id="logo">RSB Web Design</a>
+		<a href="http://www.rsbwebdesign.com" id="logo">RSB Web Design</a>
 			<nav id="main-nav">
 				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="skills.html">Skills</a></li>
-					<li><a href="recent-work.html">My Recent Work</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li><a href="http://www.rsbwebdesign.com">Home</a></li>
+					<li><a href="about">About</a></li>
+					<li><a href="skills">Skills</a></li>
+					<li><a href="portfolio">Portfolio</a></li>
+					<li><a href="contact-me">Contact</a></li>
 				</ul>
 			</nav>
 	</div>
@@ -110,19 +107,18 @@ if($error == ''){
 
 	<div id="side-menu" class="side-nav">
 		<a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-		<a href="index.html">Home</a>
-		<a href="about.html">About</a>
-		<a href="skills.html">Skills</a>
-		<a href="recent-work.html">My Recent Work</a>
-		<a href="contact.html">Contact</a>
+		<a href="http://www.rsbwebdesign.com">Home</a>
+		<a href="about">About</a>
+		<a href="skills">Skills</a>
+		<a href="portfolio">Portfolio</a>
+		<a href="contact-me">Contact</a>
 	</div>
 </header>
 	<section class="landing" id="main">
 		<div class="landing-inner">
 			<h1 class="title">Contact Me</h1>
-			<p>Reach out and send me a friendly hello.</p>
 			<div class="icons">
-			<p><a href="https://www.linkedin.com/in/rbenenato" target="_blank"><i class="fab fa-linkedin-in bounce-top"></i></a><a href="https://github.com/robertb1982" target="_blank"><i class="fab fa-github bounce-top"></i></a><a href="https://jsfiddle.net/user/1982robertb/fiddles/" target="_blank"><i class="fab fa-jsfiddle bounce-top"></i></a><a href="mailto:robertb1982@yahoo.com" class="scrolloff" target="_blank"><i class="fas fa-envelope bounce-top"></i></a></p>
+			<p><a href="https://www.linkedin.com/in/rbenenato" target="_blank"><i class="fab fa-linkedin-in bounce-top"></i></a><a href="https://github.com/robertb1982" target="_blank"><i class="fab fa-github bounce-top"></i></a><a href="https://jsfiddle.net/user/1982robertb/fiddles/" target="_blank"><i class="fab fa-jsfiddle bounce-top"></i></a><a href="mailto:robertb1982@yahoo.com" target="_blank"><i class="fas fa-envelope bounce-top"></i></a></p>
 		    </div>
 		</div>
 	</section>
@@ -131,29 +127,35 @@ if($error == ''){
 		<div class="row">
 			<div class="col-4 center">
 				<img alt="profile" src="img/bob-pic.jpg" style="max-width: 100px;border-radius: 50%;border: 2px solid white;">
-				<div class="details"><a href="mailto:info@jonny.me" class="details-small">Contact Me</a></div>
+				<div class="details">Contact Me</div>
 			</div>
 			<div class="col-8 contact" data-aos="fade-left" data-aos-duration="800">
-				<form action="mailer.php" id="contact-form" method="post" action="contact.php" name="contact-form" novalidate>
+				<form id="contact-form" method="post" action="contact-me.php#contact-form" name="contact-form" accept-charset="UTF-8" novalidate>
 					<div class="buffer-bottom">
-						<input type="text" name="name" placeholder="Name" class="form-control" id="field1" required>
+					    <div class="flex">
+						<input type="text" id="name" name="name" placeholder="Name" class="form-control" id="field1" required>
 						<p class="invalid-feedback">Please enter your name.</p>
-						<input type="email" name="email" placeholder="Email" class="form-control" required>
+						</div>
+						<div class="flex">
+						<input type="email" id="email" name="email" placeholder="Email" class="form-control" required>
 						<p class="invalid-feedback">Please enter your email.</p>
-						<input type="text" name="phone" placeholder="Phone" class="form-control" required>
+						</div>
+						<div class="flex">
+						<input type="text" id="phone" name="phone" placeholder="Phone" class="form-control" required>
 						<p class="invalid-feedback">Please enter your phone number.</p>
+						</div>
 					</div>
 					<div class="buffer-bottom">
-						<textarea class="message" name="message" placeholder="Message" class="form-control" required rows="6"></textarea>
+					   <div class="flex">
+						<textarea id="message" name="message" placeholder="Message" class="form-control" required rows="6"></textarea>
 						<p class="invalid-feedback">Please enter your message.</p>
+						</div>
 					</div>
 					<span id="submit-response"></span>
 					<div class="pull-right">
-						<input type="submit" class="button" value="send">
+						<input type="submit" class="button" id="submit" name="submit" value="send">
 					</div>
-					    <label>
-							<?php echo $result; ?>
-						</label>
+					<div class="alert-message"><?php echo $result; ?></div>
 				</form>
 			</div>
 		</div>
@@ -190,13 +192,11 @@ $("textarea").on("change paste keyup", function() {
       <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
     </svg>
 			<div class="container">
-				<h3 class="h2"  data-aos="fade-down">Thanks for stopping by!</h3>
-				<p class="text-xxl">Want to chat about something?</p>
-				<a href="mailto:robertb1982@yahoo.com" class="contact-toggle btn btn-lg btn-border push-bottom"><span aria-hidden="true" class="icon-mail"></span> Contact Me</a>
-				
+				<h3 class="h3"  data-aos="fade-down">Thanks for stopping by!</h3>
 		    <div class="icons">
 			<p><a href="https://www.linkedin.com/in/rbenenato" target="_blank"><i class="fab fa-linkedin-in bounce-top"></i></a><a href="https://github.com/robertb1982" target="_blank"><i class="fab fa-github bounce-top"></i></a><a href="https://jsfiddle.net/user/1982robertb/fiddles/" target="_blank"><i class="fab fa-jsfiddle bounce-top"></i></a><a href="mailto:robertb1982@yahoo.com" target="_blank"><i class="fas fa-envelope bounce-top"></i></a></p>
 		    </div>
+		    <p class="text-xxl">© 2019-2020 RSB Web Design</p>
 			</div>
 </footer>
 <script>
