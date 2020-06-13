@@ -1,7 +1,7 @@
 /* Pie Chart Wrapper */
 section.wrapper {
-	padding: 3em 5%;
-	background: #ffffff;
+  padding: 3em 5%;
+  background: #ffffff;
   display: block;
 }
 
@@ -139,17 +139,17 @@ section .flex-50-gt-sm {
 }
 
 .waypoint {
-    opacity: 0;
+  opacity: 0;
 }
 
 /* Designer */
 .flex .flex:first-child .bar:nth-child(1) .fill {
-      animation: animate 1 4s;
-      max-width: 85%;
+  animation: animate 1 4s;
+  max-width: 85%;
 }
 .flex .flex:first-child .bar:nth-child(2) .fill {
-      animation: animate 1 4s;
-      max-width: 75%;
+  animation: animate 1 4s;
+  max-width: 75%;
 }
 .flex .flex:first-child .bar:nth-child(3) .fill {
       animation: animate 1 4s;
@@ -238,8 +238,13 @@ section .flex-50-gt-sm {
 
 @media screen and (max-width: 768px) {
 .landing {
-    height: 400px;
+    height: 40vh;
 }
+
+.landing h1 {
+    margin-top: 80px;
+}
+
 .flex.row-gt-sm {
     flex-direction: column;
   }
@@ -247,26 +252,31 @@ section .flex-50-gt-sm {
 
 @media screen and (max-width: 425px) {
 .landing {
-   height: 300px;
+  height: 50vh;
 }
+
 .pie-chart .designer {
-    float: none;
-    text-align: center;
+  float: none;
+  text-align: center;
 }
 .pie-chart .developer {
-    float: none;
-    text-align: center;
+  float: none;
+  text-align: center;
 }
+
 #img-0 {
-    max-width: 100%;
+  max-width: 100%;
 }
+
 section.wrapper {
-    padding-top: 1em;
+  padding-top: 1em;
 }
+
 .skills-wrapper > .flex:first-child {
-    padding: 0;
+  padding: 0;
 }
+
 .skills-wrapper > .flex:last-child {
-    padding: 0;
+  padding: 0;
   }
 }
